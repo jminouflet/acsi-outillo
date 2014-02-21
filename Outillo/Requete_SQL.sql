@@ -1,4 +1,4 @@
-//Table Categorie lient
+//Table CategorieClient
 
 Create table catégorieclient{
 CodeCategorieClient number(2) not null,
@@ -68,18 +68,17 @@ CodeCommande number(5),
 CodeLivraison number(5),
 constraint PK_delivrer primary key(CodeCommande,CodeLivraison),
 constraint FK_delivrer_commande foreign key(CodeCommande) reference commande(CodeCommande),
-constraint FK_delivrer_livraison foreign key (CodeLivraison) reference livraison(CodeLivraison)
+constraint FK_delivrer_livraison foreign key (CodeLivraison) references livraison(CodeLivraison)
 };
 
 //Table Livrer
-create table livrer
-{
+create table livrer{
 CodeProduit number (5) not null,
 CodeLivraison number (5)  not null,
 Quantite number (5) not null,
 constraint PK_livrer primary key(CodeProduit,CodeLivraison),
 constraint FK_livrer_produit foreign key(CodeProduit) reference produit(CodeProduit),
-constraint FK_livrer_livraison foreign key (CodeLivraison) reference livraison(CodeLivraison)
+constraint FK_livrer_livraison foreign key (CodeLivraison) references livraison(CodeLivraison)
 };
 
 //Table TVA
@@ -87,7 +86,7 @@ constraint FK_livrer_livraison foreign key (CodeLivraison) reference livraison(C
 Create table TVA{
 CodeTVA number (2) not null,
 Taux number (3,1) not null,
-constraint PK_TVA primary key(CodeTVA)
+constraint PK_TVA primary key(CodeTVA),
 };
 
 //Table livraison
@@ -98,8 +97,95 @@ CodeFacture number (6) not null,
 CodeTransporteur number (5) not null,
 constraint PK_livraison primary key(CodeLivraison),
 constraint FK_livraison_facturation foreign key(CodeFacture) reference facturation(CodeFacture),
-constraint FK_livraison_transporteur foreign key (CodeTransporteur) reference transporteur(Codetransporteur)
+constraint FK_livraison_transporteur foreign key (CodeTransporteur) references transporteur(Codetransporteur)
 };
+
+
+//Table Facturation
+
+{
+CodeFacture number (6),
+DateEmission date,
+constraint PK_facturation primary key(CodeFacture),
+};
+
+//Table Payement
+
+Create table payement
+{
+CodeTransaction number (5),
+CodeFacture number (6),
+DateTransaction date,
+MontantTransaction number(8,2),
+constraint PK_payement primarykey(CodeTransaction),
+Constraint FK_Payement_Facturation foreign key (CodeTransaction) references Facturation(CodeFacture)
+};
+
+
+
+//Table avoirEnStock
+
+{
+CodeAgence number(2),
+CodeProduit number(5),
+Quantite number (5),
+constraint PK_avoirEnStock primary key (CodeAgence,CodeProduit),
+Constraint FK_avoirEnStock_Agence foreign key (CodeAgence) references Agence(CodeAgence),
+Constraint FK_avoirEnStock_Produit foreign key (CodeProduit) references Produit(CodeProduit)
+};
+
+//Table Contenir
+
+{
+CodeCommande number(5),
+CodeProduit number(5),
+Quantite number (5),
+constraint PK_Contenir primary key (CodeCommande,CodeProduit),
+Constraint FK_Contenir_Commande foreign key (CodeCommande ) references Commande(CodeCommande),
+Constraint FK_Contenir_Produit foreign key (CodeProduit) references Produit(CodeProduit)
+};
+
+//Table Apparaitre
+
+{
+SemestreAnnee number(1),
+Annee char(4),
+CodeProduit number (5),
+PrixHT number(10,2),
+constraint PK_Apparaitre primary key (SemestreAnnee,Annee,CodeProduit),
+Constraint FK_Apparaitre_Catologue foreign key (SemestreAnnee) references Catalogue(SemestreAnnee),
+Constraint FK_Apparaitre_Catologue foreign key (Annee) references Catalogue(Annee),
+Constraint FK_Apparaitre_Produit foreign key (CodeProduit) references Produit(CodeProduit)
+};
+
+
+//Table Catalogue
+
+{
+Annee char(4),
+SemestreAnnee number(1),
+constraint PK_Catalogue primary key (SemestreAnnee,Annee)
+};
+
+//Table Transporteur
+
+{z
+CodeTransporteur number(5),
+NomTransporteur varchar(50),
+constraint PK_Transporteur primary key (CodeTransporteur)
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
