@@ -74,11 +74,32 @@ constraint FK_delivrer_livraison foreign key (CodeLivraison) reference livraison
 //Table Livrer
 create table livrer
 {
-
+CodeProduit number (5) not null,
+CodeLivraison number (5)  not null,
+Quantite number (5) not null,
+constraint PK_livrer primary key(CodeProduit,CodeLivraison),
+constraint FK_livrer_produit foreign key(CodeProduit) reference produit(CodeProduit),
+constraint FK_livrer_livraison foreign key (CodeLivraison) reference livraison(CodeLivraison)
 };
 
+//Table TVA
 
+Create table TVA{
+CodeTVA number (2) not null,
+Taux number (3,1) not null,
+constraint PK_TVA primary key(CodeTVA)
+};
 
+//Table livraison
+
+Create table Livraison{
+CodeLivraison number (5) not null,
+CodeFacture number (6) not null,
+CodeTransporteur number (5) not null,
+constraint PK_livraison primary key(CodeLivraison),
+constraint FK_livraison_facturation foreign key(CodeFacture) reference facturation(CodeFacture),
+constraint FK_livraison_transporteur foreign key (CodeTransporteur) reference transporteur(Codetransporteur)
+};
 
 
 
