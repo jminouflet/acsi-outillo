@@ -4,7 +4,8 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{250C7258-B5AE-4584-8F02-47E56F8A0237}" Name="Projet_1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Projet_1/Projet_1.prj"/>
+		<Model Expanded="Yes" ID="{250C7258-B5AE-4584-8F02-47E56F8A0237}" Loaded="No" Name="Projet_1" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Projet_1/Projet_1.prj"/>
+		<Model Expanded="Yes" ID="{06F03411-8589-46EC-BE80-81CBEC309FDE}" Name="Cours MCD + DB + Oracle" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="/Users/e8k/Desktop/Cours MCD + DB + Oracle/Cours MCD + DB + Oracle.prj"/>
 	</Local>
 	<BrowserModule Name="Référentiel"/>
 </Workspace>
