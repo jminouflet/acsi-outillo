@@ -1260,7 +1260,7 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o17">
 <a:CreationDate>1392890196</a:CreationDate>
 <a:ModificationDate>1392892412</a:ModificationDate>
-<a:Rect>((-21057,-14723), (-2746,-13038))</a:Rect>
+<a:Rect>((-21057,-15896), (-2746,-13038))</a:Rect>
 <a:ListOfPoints>((-2746,-14723),(-10840,-14723),(-10840,-13038),(-21057,-13038))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -1302,7 +1302,7 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o24">
 <a:CreationDate>1392890541</a:CreationDate>
 <a:ModificationDate>1392977157</a:ModificationDate>
-<a:Rect>((2985,-16355), (13848,-16255))</a:Rect>
+<a:Rect>((2985,-16941), (13848,-15767))</a:Rect>
 <a:ListOfPoints>((2985,-16355),(13848,-16355))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -1491,7 +1491,7 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o50">
 <a:CreationDate>1392890897</a:CreationDate>
 <a:ModificationDate>1392891792</a:ModificationDate>
-<a:Rect>((-3473,12632), (4060,15071))</a:Rect>
+<a:Rect>((-3473,12632), (4060,16245))</a:Rect>
 <a:ListOfPoints>((-3473,15071),(-614,15071),(-614,12632),(4060,12632))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -1512,7 +1512,7 @@ CARD 0 Arial,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o53">
 <a:CreationDate>1392890897</a:CreationDate>
 <a:ModificationDate>1392891792</a:ModificationDate>
-<a:Rect>((4060,13330), (12964,13430))</a:Rect>
+<a:Rect>((4060,12156), (12964,13430))</a:Rect>
 <a:ListOfPoints>((12964,13330),(4060,13330))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -1597,7 +1597,7 @@ CARD 0 Arial,8,N</a:FontList>
 <a:CreationDate>1392892356</a:CreationDate>
 <a:ModificationDate>1392892620</a:ModificationDate>
 <a:SourceTextOffset>(-3262, -1387)</a:SourceTextOffset>
-<a:Rect>((-43915,-17940), (-7711,-16028))</a:Rect>
+<a:Rect>((-43915,-18001), (-7711,-16028))</a:Rect>
 <a:ListOfPoints>((-7711,-16028),(-25034,-16028),(-25034,-17940),(-43915,-17940))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -3994,7 +3994,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Creator>b2orislave</a:Creator>
 <a:ModificationDate>1392978539</a:ModificationDate>
 <a:Modifier>b2orislave</a:Modifier>
-<a:TargetModelURL>file:///C|/Users/b2orislave/Documents/GitHub/acsi-outillo/Outillo/PWAMC_MCD/Projet_1/MPD.mpd</a:TargetModelURL>
+<a:TargetModelURL>file:///%[PRJ_ROOT_DIR]%/MPD.mpd</a:TargetModelURL>
 <a:TargetModelID>6FC3E305-873F-497C-B92A-BFE82A51C542</a:TargetModelID>
 <a:TargetModelClassID>CDE44E21-9669-11D1-9914-006097355D9B</a:TargetModelClassID>
 <c:SessionShortcuts>
