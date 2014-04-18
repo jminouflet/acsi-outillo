@@ -4,7 +4,9 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{250C7258-B5AE-4584-8F02-47E56F8A0237}" Name="Projet Outilo" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Projet OUTILO/Projet OUTILO.prj"/>
+		<Model Expanded="Yes" ID="{250C7258-B5AE-4584-8F02-47E56F8A0237}" Loaded="No" Name="Projet Outilo" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Projet OUTILO/Projet OUTILO.prj"/>
+		<Model Expanded="Yes" ID="{0812465C-1814-43D1-890C-DB39CED467F0}" Loaded="No" Name="CiiLAB v2" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="/Users/e8k/Desktop/CiiLAB v2/CiiLAB v2.prj"/>
+		<Model Expanded="Yes" ID="{13806D05-C7A8-44F5-8696-922A4601C985}" Name="Données conceptuelles" Selected="Yes" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="/Users/e8k/Desktop/CiiLAB V2/Données conceptuelles.mcd"/>
 	</Local>
 	<BrowserModule Name="Référentiel"/>
 </Workspace>
