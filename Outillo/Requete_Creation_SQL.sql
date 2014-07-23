@@ -108,7 +108,7 @@ create table delivrer(
 CodeCommande number(5),
 CodeLivraison number(5),
 constraint PK_delivrer primary key(CodeCommande,CodeLivraison),
-constraint FK_delivrer_commande foreign key(CodeCommande) reference commande(CodeCommande),
+constraint FK_delivrer_commande foreign key(CodeCommande) references commande(CodeCommande),
 constraint FK_delivrer_livraison foreign key (CodeLivraison) references livraison(CodeLivraison)
 );
 
