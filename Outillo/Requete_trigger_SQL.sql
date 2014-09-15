@@ -4,13 +4,13 @@ Before insert or update
 For each row
 
 Begin
-If :new.NomClient = old.NomClient then
+If:new.NomClient = old.NomClient then
 dbms_output.put_line( 'Client déjà existant')
 end if
 end;
 
 -------------------------------------------------
-
+--
 Create or replace trigger TRG_COMLIV
 On Livraison
 before insert or update
